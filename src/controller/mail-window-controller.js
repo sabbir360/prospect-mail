@@ -12,7 +12,7 @@ let $this
 //Setted by cmdLine to initial minimization
 const initialMinimization = {
     domReady: false
-} 
+}
 
 class MailWindowController {
     constructor() {
@@ -58,7 +58,7 @@ class MailWindowController {
         })
 
         // and load the index.html of the app.
-        this.win.loadURL(outlookUrl)
+        this.win.loadURL(outlookUrl, {userAgent: 'Chrome'})
 
         // Show window handler
         ipcMain.on('show', (event) => {
@@ -120,7 +120,7 @@ class MailWindowController {
             console.log('initialMinimization.domReady', initialMinimization.domReady)
             if (!initialMinimization.domReady) {
                 this.win.show()
-            }             
+            }
         })
 
         // prevent the app quit, hide the window instead.
@@ -197,7 +197,7 @@ class MailWindowController {
                         }
                     });
                 });
-            
+
                 observer.observe(unreadSpan, {childList: true});
 
                 // If the div containing reminders gets taller we probably got a new

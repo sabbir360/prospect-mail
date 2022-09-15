@@ -1,7 +1,7 @@
 {
   "name": "prospect-mail",
   "productName": "Prospect Mail",
-  "version": "0.5.0-beta",
+  "version": "0.1.0",
   "main": "src/main.js",
   "description": "Unofficial desktop client for Microsoft Outlook",
   "homepage": "https://github.com/julian-alarcon/prospect-mail",
@@ -67,12 +67,10 @@
         "StartupWMClass": "prospect-mail"
       },
       "target": [
-        "rpm",
-        "deb",
-        "tar.gz",
-        "AppImage",
-        "pacman",
-        "snap"
+          "deb",
+          "tar.gz",
+          "AppImage",
+          "snap"
       ],
       "publish": {
         "provider": "github",

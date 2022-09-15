@@ -167,3 +167,14 @@ snapcraft upload --release=edge prospect-mail_x.y.z_arch.snap
 [Julian Alarcon](https://desentropia.com) based on work on
 [electron-outlook](https://github.com/eNkru/electron-outlook) by
 [Howard J](https://enkru.github.io/)
+
+## Info
+This can be changed
+"target": [
+        "rpm",
+        "deb",
+        "tar.gz",
+        "AppImage",
+        "pacman",
+        "snap"
+      ],
